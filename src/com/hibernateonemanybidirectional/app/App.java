@@ -15,7 +15,7 @@ public class App {
 	public static void main(String[] args) {
 
 		System.out
-				.println(" ****** Hibernate One-Many Unidirectional - Foreignkey (Annotation) *** START **** ");
+				.println(" ****** Hibernate One-Many Bidirectional - Foreignkey (Annotation) *** START **** ");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		RegOffice regOffice = new RegOffice(RandomUtils.generateRandomInteger(Integer.MAX_VALUE), RandomUtils.generateRandomString(20));
@@ -31,7 +31,7 @@ public class App {
 		session.getTransaction().commit();
 		session.close();
 		System.out
-				.println(" ****** Hibernate One-Many Unidirectional - Foreignkey (Annotation) *** END **** ");
+				.println(" ****** Hibernate One-Many Bidirectional - Foreignkey (Annotation) *** END **** ");
 
 	}
 
